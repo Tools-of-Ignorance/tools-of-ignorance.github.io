@@ -25,7 +25,7 @@ h1.no-margin{
 <h2 class = 'no-margin'>Recent Posts:</h2>
 
 <ul class="no-bullets">
-  {% for post in site limit:3 %}
+  {% for post in site.posts limit:3 %}
     <li>
       <h2 class="no-margin" style = 'margin-top:15px'><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {{ post.date | date: "%B %e, %Y" }} <br>
