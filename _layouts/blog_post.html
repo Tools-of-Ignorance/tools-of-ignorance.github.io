@@ -10,10 +10,10 @@ ul.no-bullets {
 }
 </style>
 
-<h2 style='text-align:center'><a style='color:#325028; margin:0'>{{ page.title }}</a></h2>
-<h3><a style='color:#325028; margin:0'>{{ page.author }}</a></h3>
-{% if page.affiliation %}<h4><a style='color:#325028; margin:0'>{{ page.affiliation}}</a></h4>{% endif %}
-<h4><a style='color:#325028; margin:0'>{{ page.date | date: "%B %e, %Y" }}</a></h4>
+<h2 style='text-align:center; margin:0'><a style='color:#325028'>{{ page.title }}</a></h2>
+<h3 style='margin:0' ><a style='color:#325028'>{{ page.author }}</a></h3>
+{% if page.affiliation %}<h4 style='margin:0'><a style='color:#325028'>{{ page.affiliation}}</a></h4>{% endif %}
+<h4 style='margin:0'><a style='color:#325028'>{{ page.date | date: "%B %e, %Y" }}</a></h4>
 
 <p>{{ content }}</p>
 
