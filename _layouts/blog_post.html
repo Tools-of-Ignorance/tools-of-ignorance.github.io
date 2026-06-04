@@ -11,12 +11,14 @@ ul.no-bullets {
 </style>
 
 
-<p><h1><a style='color:#325028'>{{ page.title }}</a></h1>
-<span style="float:right;">
-  <h4 style='margin:0' ><a style='color:#325028'>{{ page.author }}</a></h4>
-  {% if page.affiliation %}<h4 style='margin:0'><a style='color:#325028'>{{ page.affiliation}}</a></h4>{% endif %}
-  <h4 style='margin:0'><a style='color:#325028'>{{ page.date | date: "%B %e, %Y" }}</a></h4>
-</span></p>
+<p>
+  <h1><a style='color:#325028'>{{ page.title }}</a></h1>
+  <span style="float:right;">
+    <h4 style='margin:0' ><a style='color:#325028'>{{ page.author }}</a></h4>
+    {% if page.affiliation %}<h4 style='margin:0'><a style='color:#325028'>{{ page.affiliation}}</a></h4>{% endif %}
+    <h4 style='margin:0'><a style='color:#325028'>{{ page.date | date: "%B %e, %Y" }}</a></h4>
+  </span>
+</p>
 
 <p>{{ content }}</p>
 
