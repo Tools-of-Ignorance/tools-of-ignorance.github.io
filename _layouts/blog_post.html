@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<style>
+ul.no-bullets {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+h2.no-margin{
+  margin:0;
+}
+h1.blue{
+  margin: 0;
+  padding: 0;
+  line-height: 0.1em;
+  color:#001273;
+}
+</style>
+
+<a style='text-align:right; display:block;' href="https://www.catherineslaughter.space/as_time/">Post List</a>
+
+<h1 style='text-align:center' class = 'blue'><a href="https://www.catherineslaughter.space/academic_standing/">Academic Standing</a><h1>
+<h2 style='text-align:center' class = 'no-margin'>{{ page.title }}</h2>
+<b>{{ page.author }}<br>{{ page.affil }}<br>{{ page.date | date: "%B %e, %Y" }}</b>
+
+<p>{{ content }}</p>
+
+<script src="https://utteranc.es/client.js"
+        repo="catieslaughts/catieslaughts.github.io"
+        issue-term="pathname"
+        label="AC-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script>
