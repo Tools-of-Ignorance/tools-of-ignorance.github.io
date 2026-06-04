@@ -8,6 +8,16 @@ ul.no-bullets {
   margin: 0;
   padding: 0;
 }
+
+ul.horizontal-list {
+  list-style-type: none;
+  display: flex;          /* Aligns items horizontally */
+  list-style-type: none;  /* Removes the default bullet points */
+  padding: 0;             /* Removes default list indentation */
+  margin: 0;              
+  gap: 20px;              /* Controls spacing between items */
+}
+
 h1,h2,h3.no-margin{
   margin:0;
 }
@@ -21,10 +31,10 @@ h1,h2,h3.no-margin{
 
 <h2 class = 'no-margin'>Featured Posts:</h2>
 
-<ul class="no-bullets">
+<ul class="horizontal-list">
   {% for post in site.posts limit:3 %}
     <li>
-      <h3 class="no-margin" style = "margin-top:15px;color:#325028"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+      <h3 class="no-margin" style = "margin-top:15px"><a style='color:#325028' href="{{ post.url }}">{{ post.title }}</a></h3>
       <b style='color:#325028'>{{ post.author }}</b><br>
       {{ post.date | date: "%B %e, %Y" }} <br>
       <!--tags: {% for tag in post.tags %} {% if forloop.last %} {{ tag }} {% else %} {{ tag }}, {% endif %} {% endfor %} <br> !-->
