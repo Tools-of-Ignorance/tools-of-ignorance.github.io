@@ -8,10 +8,7 @@ ul.no-bullets {
   margin: 0;
   padding: 0;
 }
-h2.no-margin{
-  margin:0;
-}
-h1.no-margin{
+h1,h2,h3.no-margin{
   margin:0;
 }
 </style>
@@ -22,7 +19,7 @@ h1.no-margin{
 
 {{content}}
 
-<h2 class = 'no-margin'>Recent Posts:</h2>
+<h2 class = 'no-margin'>Featured Posts:</h2>
 
 <ul class="no-bullets">
   {% for post in site.posts limit:3 %}
