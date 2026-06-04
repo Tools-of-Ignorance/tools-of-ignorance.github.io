@@ -27,7 +27,7 @@ h1,h2,h3.no-margin{
       <h3 class="no-margin" style = 'margin-top:15px' href="{{ post.url }}">{{ post.title }}</h3>
       <b>{{ post.author }}</b><br>
       {{ post.date | date: "%B %e, %Y" }} <br>
-      tags: {% for tag in post.tags %} {% if forloop.last %} {{ tag }} {% else %} {{ tag }}, {% endif %} {% endfor %} <br>
+      <!--tags: {% for tag in post.tags %} {% if forloop.last %} {{ tag }} {% else %} {{ tag }}, {% endif %} {% endfor %} <br> !-->
       {{ post.excerpt_text }}
     </li>
   {% endfor %}
