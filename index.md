@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: TOI
+title: Home
 ---
 
 # TOOLS OF IGNORANCE
