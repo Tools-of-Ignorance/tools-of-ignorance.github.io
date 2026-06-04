@@ -8,19 +8,10 @@ ul.no-bullets {
   margin: 0;
   padding: 0;
 }
-h2.no-margin{
-  margin:0;
-}
-h1.blue{
-  margin: 0;
-  padding: 0;
-  line-height: 0.1em;
-  color:#001273;
-}
 </style>
 
-<h2 style='text-align:center'><a>{{ page.title }}</a></h2>
-<h3><a>{{ page.author }}</a></h3><br><h3><a>{{ page.date | date: "%B %e, %Y" }}</a></h3>
+<h2 style='text-align:center;margin:0;'><a style='color:#325028'>{{ page.title }}</a></h2>
+<h3><a style='color:#325028'>{{ page.author }}</a></h3><br><h3><a style='color:#325028'>{{ page.date | date: "%B %e, %Y" }}</a></h3>
 
 <p>{{ content }}</p>
 
